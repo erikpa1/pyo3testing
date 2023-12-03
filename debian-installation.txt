@@ -1,0 +1,24 @@
+sudo add-apt-repository ppa:deadsnakes/ppa
+
+sudo apt install python3.11
+
+# sudo apt purge python3.11-venv v pripade ze to nepojde
+
+sudo apt install python3.11-venv
+
+#Aktivacia pythonu na wslke
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.11 1
+
+sudo apt install python3-pip
+
+
+python -m venv lenv #pre linux to moze byt iny interpreter
+
+cd venv/bin
+
+source activate
+
+#najdenie working directory
+cd mnt
+cd c
+#Stamad sa uz viem dostat do working directory
